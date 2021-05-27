@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import Veg from './vege.mp4';
+import Leafy from './Leafy.mp4';
 
 function Home() {
   return(
@@ -8,7 +8,7 @@ function Home() {
     <div className='Homepage-body'>
       <header className='moving-banner'>
         <div className='video-container'>
-          <video src={Veg} autoplay autoplay muted loop></video>
+          <video src={Leafy} autoPlay muted loop></video>
         </div>
         <div className='moving-banner-content'>
           <h1>Vegetables</h1>

@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background: var(--primary-color) url() no-repeat center center/cover;
+  background: var(--primary-color) url('./Leafy.jpg') no-repeat center center/cover;
 }
 
 .video-container video {
