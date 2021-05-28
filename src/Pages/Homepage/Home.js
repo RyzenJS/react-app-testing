@@ -10,8 +10,8 @@ function Home() {
       <Navbar />
       
       <header className='moving-banner'>
-        <video src={Leafy} autoPlay muted loop></video>
         <div className='video-container'>
+          <video src={Leafy} autoPlay muted loop></video>
         </div>
         <div className='moving-banner-content'>
           <h1>Vegetables</h1>
