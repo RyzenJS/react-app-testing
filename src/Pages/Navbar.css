@@ -5,7 +5,8 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  background-color: none;
+  /* background-color: #000; */
+  background: none;
   position: relative;
   top: 0;
   z-index: 1;
@@ -27,6 +28,7 @@
   position: fixed;
   top: 0;
   transition: 850ms;
+  z-index: 1;
 }
 
 .nav-menu {
@@ -38,6 +40,7 @@
   top: 0;
   left: -100%;
   transition: 850ms;
+  z-index: 1;
 }
 
 .nav-menu.active,

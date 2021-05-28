@@ -1,9 +1,19 @@
 @import '~antd/dist/antd.css';
 
+::selection {
+  background: #446B40;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5em;
   font-weight: 500;
+}
+
+blockquote {
+  font-size: 20px;
+  line-height: 1.5625em;
+  font-weight: 400;
 }
 
 .Homepage-body {
@@ -73,6 +83,7 @@ h1, h2, h3, h4, h5, h6 {
   background: none;
   color: #fff;
   border-color: #fff;
+  transition: 1s;
 }
 
 .banner-btn:hover {
@@ -81,9 +92,48 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #fff;
 }
 
-.content {
+.content-container {
   position: relative;
-  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 100px 15px 100px 0;
+}
+
+.content {
   margin: 0;
-  padding: 100px 100px;
+  padding: 0 150px 100px 0;
+  max-width: 970px;
+}
+
+.footer-container {
+  position: relative;
+  max-width: 1140px;
+  padding: 0 150px 100px 0;
+  margin-right: 100px;
+}
+
+.footer-container h1,
+.footer-container h1:focus {
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+.footer-container h1:hover {
+  color: #446B40;
+}
+
+.footer-container h2 {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  opacity: 0.9;
+}
+
+
+.footer-content {
+  text-align: right;
 }
