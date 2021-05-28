@@ -23,7 +23,6 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: center;
   text-align: center;
   padding: 0 20px;
-  color: #fff;
 }
 
 .video-container {
@@ -59,6 +58,32 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -1;
 }
 
-.moving-banner-content {
+.moving-banner-content h1,
+.moving-banner-content h3 {
+  color: #fff;
   z-index: 10;
+}
+
+.moving-banner-content h1 {
+  font-size: 60px;
+}
+
+.banner-btn,
+.banner-btn:focus {
+  background: none;
+  color: #fff;
+  border-color: #fff;
+}
+
+.banner-btn:hover {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 100px 100px;
 }

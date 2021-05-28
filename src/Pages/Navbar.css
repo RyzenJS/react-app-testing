@@ -5,9 +5,10 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  background-color: #fff;
+  background-color: none;
   position: relative;
   top: 0;
+  z-index: 1;
 }
 
 .menu-bars {
@@ -47,7 +48,7 @@
 }
 
 .ant-menu-item a:hover{
-  color: #fff;
+  color: #000;
 }
 
 /* .nav-menu-active {
