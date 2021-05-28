@@ -1,11 +1,21 @@
 import React from 'react';
-import {Button, Row, Col, Divider} from 'antd';
+import {BackTop,Button, Row, Col, Divider, Pagination, Image} from 'antd';
 import {Link} from 'react-router-dom';
 import Leafy from './Leafy.mp4';
 import Navbar from '../Navbar';
 import './Home.css';
 
 const style = { background: '#446B40', padding: '8px 0' };
+const backtopstyle = {
+  height: 40,
+  width: 40,
+  lineHeight: '40px',
+  borderRadius: 4,
+  backgroundColor: '#446B40',
+  color: '#fff',
+  textAlign: 'center',
+  fontSize: 14,
+};
 
 function Home() {
   return(
@@ -36,27 +46,56 @@ function Home() {
           <Divider orientation="left"><h2>All Products</h2></Divider>
           <Row>
             <Col span={6} xs={{ order: 1 }} sm={{ order: 2 }} md={{ order: 3 }} lg={{ order: 4 }}>
-              1 col-order-responsive
+              Item 1
             </Col>
             <Col span={6} xs={{ order: 2 }} sm={{ order: 1 }} md={{ order: 4 }} lg={{ order: 3 }}>
-              2 col-order-responsive
+              Item 2
             </Col>
             <Col span={6} xs={{ order: 3 }} sm={{ order: 4 }} md={{ order: 2 }} lg={{ order: 1 }}>
-              3 col-order-responsive
+              Item 3
             </Col>
             <Col span={6} xs={{ order: 4 }} sm={{ order: 3 }} md={{ order: 1 }} lg={{ order: 2 }}>
-              4 col-order-responsive
+              <Image
+                width={200}
+                src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+              />
             </Col>
           </Row>
+          <Row>
+            <Col span={6} xs={{ order: 1 }} sm={{ order: 2 }} md={{ order: 3 }} lg={{ order: 4 }}>
+              Item 1
+            </Col>
+            <Col span={6} xs={{ order: 2 }} sm={{ order: 1 }} md={{ order: 4 }} lg={{ order: 3 }}>
+              Item 2
+            </Col>
+            <Col span={6} xs={{ order: 3 }} sm={{ order: 4 }} md={{ order: 2 }} lg={{ order: 1 }}>
+              Item 3
+            </Col>
+            <Col span={6} xs={{ order: 4 }} sm={{ order: 3 }} md={{ order: 1 }} lg={{ order: 2 }}>
+              Item 4
+            </Col>
+          </Row>
+
+          <Pagination
+            className='pagination'
+            current='1'
+            simple defaultCurrent={2}
+            total={20}
+            responsive={true}
+          />
         </div>
       </div>
 
       <footer className='footer-container'>
         <div className='footer-content'>
-          <h2>Contact Us. Say Hello</h2>
+          <h2>Say Hello. ug kuwa na mo</h2>
           <a target='_blank' rel='noreferrer noopener nofollow'><h1>gmail@gmail.com</h1></a>
         </div>
       </footer>
+
+      <BackTop duration={900}>
+        <div style={backtopstyle}>UP</div>
+      </BackTop>
     </div>
     </>
   )

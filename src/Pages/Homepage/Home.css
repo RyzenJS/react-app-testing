@@ -116,7 +116,9 @@ blockquote {
   max-width: 970px;
 }
 
+/* Product Section */
 .product-container {
+  position: relative;
   padding-top: 50px;
 }
 
@@ -127,6 +129,15 @@ blockquote {
 
 #components-grid-demo-flex-order [class~='ant-row'] {
   background: rgba(128, 128, 128, 0.08);
+}
+
+.pagination {
+  position: relative;
+  bottom: 0;
+  padding-top: 50px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 /* Footer */
@@ -160,4 +171,8 @@ blockquote {
 
 .footer-content {
   text-align: right;
+}
+
+.site-back-top-basic {
+  color: rgb(68, 107, 64);
 }

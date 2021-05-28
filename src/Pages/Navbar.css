@@ -1,5 +1,10 @@
 @import '~antd/dist/antd.css';
 
+html {
+    --antd-wave-shadow-color: #fff;
+    --scroll-bar: 0;
+}
+
 .navbar {
   height: 40px;
   display: flex;
@@ -18,17 +23,31 @@
   background: none;
 }
 
-.ant-menu {
+.ant-menu,
+.ant-menu:focus {
   width: 250px;
-  /* height: 100vh; */
   background-color: #fff;
   font-size: 18px;
-  /* background: #fff; */
   justify-content: center;
   position: fixed;
   top: 0;
-  transition: 850ms;
+  transition: 1s;
   z-index: 1;
+}
+
+.ant-menu-item-selected a,
+.ant-menu-item-selected a:hover {
+  color: #446B40;
+}
+
+a {
+  color: #446B40;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: color 0.3s;
+  -webkit-text-decoration-skip: objects;
 }
 
 .nav-menu {
@@ -51,7 +70,7 @@
 }
 
 .ant-menu-item a:hover{
-  color: #000;
+  color: #446B40;
 }
 
 /* .nav-menu-active {

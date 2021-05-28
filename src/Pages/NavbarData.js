@@ -11,7 +11,7 @@ export const NavbarData = [
   },
   {
     title: 'Item list',
-    path: '/item',
+    path: '/',
     icon: <ShoppingCartOutlined />,
     cName: 'nav-text'
   }
