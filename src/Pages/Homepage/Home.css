@@ -105,6 +105,16 @@ blockquote {
   max-width: 970px;
 }
 
+.product-container {
+  padding-top: 50px;
+}
+
+.gutter-box {
+  padding: 8px 0;
+  background: #00a0e9;
+}
+
+/* Footer */
 .footer-container {
   position: relative;
   max-width: 1140px;
