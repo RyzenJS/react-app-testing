@@ -1,5 +1,5 @@
 import React from 'react';
-import {BackTop,Button, Row, Col, Divider, Pagination, Image} from 'antd';
+import {BackTop, Button, Row, Col, Divider, Pagination, Image} from 'antd';
 import {Link} from 'react-router-dom';
 import Leafy from './Leafy.mp4';
 import Navbar from '../Navbar';
