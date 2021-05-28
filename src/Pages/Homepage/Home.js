@@ -1,7 +1,7 @@
 import React from 'react';
-import {BackTop, Button, Row, Col, Divider, Pagination, Image} from 'antd';
+import {BackTop, Button, Row, Col, Divider, Pagination, Image, Card} from 'antd';
 import {Link} from 'react-router-dom';
-import Leafy from './Leafy.mp4';
+import Leafy from './Banner/Leafy.mp4';
 import Navbar from '../Navbar';
 import './Home.css';
 
@@ -16,6 +16,7 @@ const backtopstyle = {
   textAlign: 'center',
   fontSize: 14,
 };
+const { Meta } = Card;
 
 function Home() {
   return(
@@ -46,33 +47,25 @@ function Home() {
           <Divider orientation="left"><h2>All Products</h2></Divider>
           <Row>
             <Col span={6} xs={{ order: 1 }} sm={{ order: 2 }} md={{ order: 3 }} lg={{ order: 4 }}>
-              Item 1
+              test 1
             </Col>
             <Col span={6} xs={{ order: 2 }} sm={{ order: 1 }} md={{ order: 4 }} lg={{ order: 3 }}>
               Item 2
             </Col>
             <Col span={6} xs={{ order: 3 }} sm={{ order: 4 }} md={{ order: 2 }} lg={{ order: 1 }}>
-              Item 3
+              <Card
+                hoverable
+                style={{ width: 240 }}
+                cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+              >
+                <Meta title="Europe Street beat" description="www.instagram.com" />
+              </Card>
             </Col>
             <Col span={6} xs={{ order: 4 }} sm={{ order: 3 }} md={{ order: 1 }} lg={{ order: 2 }}>
               <Image
                 width={200}
                 src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
               />
-            </Col>
-          </Row>
-          <Row>
-            <Col span={6} xs={{ order: 1 }} sm={{ order: 2 }} md={{ order: 3 }} lg={{ order: 4 }}>
-              Item 1
-            </Col>
-            <Col span={6} xs={{ order: 2 }} sm={{ order: 1 }} md={{ order: 4 }} lg={{ order: 3 }}>
-              Item 2
-            </Col>
-            <Col span={6} xs={{ order: 3 }} sm={{ order: 4 }} md={{ order: 2 }} lg={{ order: 1 }}>
-              Item 3
-            </Col>
-            <Col span={6} xs={{ order: 4 }} sm={{ order: 3 }} md={{ order: 1 }} lg={{ order: 2 }}>
-              Item 4
             </Col>
           </Row>
 
@@ -94,7 +87,7 @@ function Home() {
       </footer>
 
       <BackTop duration={900}>
-        <div style={backtopstyle}>UP</div>
+        <div style={backtopstyle}>Up</div>
       </BackTop>
     </div>
     </>
