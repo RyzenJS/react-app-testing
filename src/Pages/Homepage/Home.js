@@ -33,21 +33,19 @@ function Home() {
         </blockquote>
 
         <div className='product-container'>
-
-
-          <Divider orientation="left"><h1>All Products</h1></Divider>
-          <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-            <Col className="gutter-row" span={6}>
-              <div style={style}>col-6</div>
+          <Divider orientation="left"><h2>All Products</h2></Divider>
+          <Row>
+            <Col span={6} xs={{ order: 1 }} sm={{ order: 2 }} md={{ order: 3 }} lg={{ order: 4 }}>
+              1 col-order-responsive
             </Col>
-            <Col className="gutter-row" span={6}>
-              <div style={style}>col-6</div>
+            <Col span={6} xs={{ order: 2 }} sm={{ order: 1 }} md={{ order: 4 }} lg={{ order: 3 }}>
+              2 col-order-responsive
             </Col>
-            <Col className="gutter-row" span={6}>
-              <div style={style}>col-6</div>
+            <Col span={6} xs={{ order: 3 }} sm={{ order: 4 }} md={{ order: 2 }} lg={{ order: 1 }}>
+              3 col-order-responsive
             </Col>
-            <Col className="gutter-row" span={6}>
-              <div style={style}>col-6</div>
+            <Col span={6} xs={{ order: 4 }} sm={{ order: 3 }} md={{ order: 1 }} lg={{ order: 2 }}>
+              4 col-order-responsive
             </Col>
           </Row>
         </div>
