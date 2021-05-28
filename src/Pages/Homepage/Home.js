@@ -3,6 +3,10 @@ import {BackTop, Button, Row, Col, Divider, Pagination, Image, Card} from 'antd'
 import {Link} from 'react-router-dom';
 import Leafy from './Banner/Leafy.mp4';
 import Navbar from '../Navbar';
+import Item1 from './Products/bellpepper.jpg';
+import Item2 from './Products/tomatoes.jpg';
+import Item3 from './Products/orangepumpkins.jpg';
+import Item4 from './Products/carrots.jpg';
 import './Home.css';
 
 const style = { background: '#446B40', padding: '8px 0' };
@@ -47,25 +51,43 @@ function Home() {
           <Divider orientation="left"><h2>All Products</h2></Divider>
           <Row>
             <Col span={6} xs={{ order: 1 }} sm={{ order: 2 }} md={{ order: 3 }} lg={{ order: 4 }}>
-              test 1
+              <Card
+                hoverable
+                style={{ width: 240}}
+                cover={<img alt="carrots" src={Item4} />}
+              >
+                <Meta title="Carrots" description="www.pexels.com" />
+              </Card>
             </Col>
+
             <Col span={6} xs={{ order: 2 }} sm={{ order: 1 }} md={{ order: 4 }} lg={{ order: 3 }}>
-              Item 2
+              <Card
+                hoverable
+                style={{ width: 240}}
+                cover={<img alt="orangepumpkins" src={Item3} />}
+              >
+                <Meta title="Orange Pumpkins" description="www.pexels.com" />
+              </Card>
             </Col>
+
             <Col span={6} xs={{ order: 3 }} sm={{ order: 4 }} md={{ order: 2 }} lg={{ order: 1 }}>
               <Card
                 hoverable
-                style={{ width: 240 }}
-                cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+                style={{ width: 240}}
+                cover={<img alt="bellpepper" src={Item1} />}
               >
-                <Meta title="Europe Street beat" description="www.instagram.com" />
+                <Meta title="Green Bell pepper" description="www.pexels.com" />
               </Card>
             </Col>
+
             <Col span={6} xs={{ order: 4 }} sm={{ order: 3 }} md={{ order: 1 }} lg={{ order: 2 }}>
-              <Image
-                width={200}
-                src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
-              />
+              <Card
+                hoverable
+                style={{ width: 240}}
+                cover={<img alt="tomatoes" src={Item2} />}
+              >
+                <Meta title="Tomatoes" description="www.pexels.com" />
+              </Card>
             </Col>
           </Row>
 
