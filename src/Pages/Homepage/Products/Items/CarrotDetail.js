@@ -3,7 +3,7 @@ import React from 'react'
 function CarrotDetail() {
   return (
     <>
-      <h1>Caoort</h1>
+      <h1>Carrot</h1>
     </>
   )
 }
