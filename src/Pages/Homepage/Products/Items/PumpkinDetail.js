@@ -1,6 +1,6 @@
 import React from 'react'
 
-function PumpkinsDetails() {
+function PumpkinDetail() {
   return (
     <>
     <div>PumpkinsDetails</div>
@@ -8,4 +8,4 @@ function PumpkinsDetails() {
   )
 }
 
-export default PumpkinsDetails;
+export default PumpkinDetail;

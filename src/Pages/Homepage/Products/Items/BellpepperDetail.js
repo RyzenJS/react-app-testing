@@ -1,9 +1,9 @@
 import React from 'react'
 
-function BellpepperDetails() {
+function BellpepperDetail() {
   return (
     <div>BellpepperDetails</div>
   )
 }
 
-export default BellpepperDetails;
+export default BellpepperDetail;

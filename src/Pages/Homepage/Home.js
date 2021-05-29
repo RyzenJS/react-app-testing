@@ -3,6 +3,7 @@ import {BackTop, Button, Row, Col, Divider, Pagination, Image, Card} from 'antd'
 import {Link} from 'react-router-dom';
 import Leafy from './Banner/Leafy.mp4';
 import Navbar from '../Navbar';
+import {ProductData} from './Products/ProductData';
 import './Home.css';
 
 // TODO: Create separate json file
@@ -41,56 +42,32 @@ function Home() {
       </header>
 
       <div id='product' className='content-container'>
-        <blockquote>
+        {/*<blockquote>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </blockquote>
+        </blockquote> */}
 
         <div className='product-container'>
           <Divider orientation="left"><h2>All Products</h2></Divider>
           <Row>
-            <Col span={6} xs={{ order: 1 }} sm={{ order: 2 }} md={{ order: 3 }} lg={{ order: 4 }}>
-              <Card
-                hoverable
-                style={{ width: 240}}
-                cover={<img alt="carrots" src={Item4} />}
-              >
-                <Meta title="Carrots" description="www.pexels.com" />
-              </Card>
-            </Col>
-
-            <Col span={6} xs={{ order: 2 }} sm={{ order: 1 }} md={{ order: 4 }} lg={{ order: 3 }}>
-              <Card
-                hoverable
-                style={{ width: 240}}
-                cover={<img alt="orangepumpkins" src={Item3} />}
-              >
-                <Meta title="Orange Pumpkins" description="www.pexels.com" />
-              </Card>
-            </Col>
-
-            <Col span={6} xs={{ order: 3 }} sm={{ order: 4 }} md={{ order: 2 }} lg={{ order: 1 }}>
-              <Card
-                hoverable
-                style={{ width: 240}}
-                cover={<img alt="bellpepper" src={Item1} />}
-              >
-                <Meta title="Green Bell pepper" description="www.pexels.com" />
-              </Card>
-            </Col>
-
-            <Col span={6} xs={{ order: 4 }} sm={{ order: 3 }} md={{ order: 1 }} lg={{ order: 2 }}>
-              <Card
-                hoverable
-                style={{ width: 240}}
-                cover={<img alt="tomatoes" src={Item2} />}
-              >
-                <Meta title="Tomatoes" description="www.pexels.com" />
-              </Card>
-            </Col>
+            {
+              ProductData.map((item, index) => {
+                return(
+                    <Col>
+                      <Card
+                        hoverable
+                        style={{ width: 240}}
+                        cover={item.image}
+                      >
+                        <Meta title={item.title} description={item.description} />
+                      </Card>
+                    </Col>
+                )
+              })
+            }
           </Row>
 
           <Pagination

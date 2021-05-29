@@ -119,7 +119,7 @@ blockquote {
 /* Product Section */
 .product-container {
   position: relative;
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 
 .gutter-box {
@@ -138,6 +138,12 @@ blockquote {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.ant-row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
 }
 
 /* Footer */

@@ -1,9 +1,9 @@
 import React from 'react'
 
-function CarrotsDetails() {
+function CarrotDetail() {
   return (
     <div>CarrotsDetails</div>
   )
 }
 
-export default CarrotsDetails;
+export default CarrotDetail;
