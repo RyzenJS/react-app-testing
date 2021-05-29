@@ -6,12 +6,6 @@ import Navbar from '../Navbar';
 import {ProductData} from './Products/ProductData';
 import './Home.css';
 
-// TODO: Create separate json file
-import Item1 from './Products/Images/bellpepper.jpg';
-import Item2 from './Products/Images/tomatoes.jpg';
-import Item3 from './Products/Images/orangepumpkins.jpg';
-import Item4 from './Products/Images/carrots.jpg';
-
 const style = { background: '#446B40', padding: '8px 0' };
 const backtopstyle = {
   height: 40,
