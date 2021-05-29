@@ -2,7 +2,9 @@ import React from 'react'
 
 function CarrotDetail() {
   return (
-    <div>CarrotsDetails</div>
+    <>
+      <h1>Caoort</h1>
+    </>
   )
 }
 

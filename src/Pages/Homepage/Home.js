@@ -51,13 +51,15 @@ function Home() {
               ProductData.map((item, index) => {
                 return(
                     <Col>
+                    <Link to={item.path}>
                       <Card
                         hoverable
                         style={{ width: 240}}
                         cover={item.image}
                       >
-                        <Meta title={item.title} description={item.description} />
+                          <Meta title={item.title} description={item.description} />
                       </Card>
+                      </Link>
                     </Col>
                 )
               })
