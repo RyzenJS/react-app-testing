@@ -3,11 +3,13 @@ import {BackTop, Button, Row, Col, Divider, Pagination, Image, Card} from 'antd'
 import {Link} from 'react-router-dom';
 import Leafy from './Banner/Leafy.mp4';
 import Navbar from '../Navbar';
-import Item1 from './Products/bellpepper.jpg';
-import Item2 from './Products/tomatoes.jpg';
-import Item3 from './Products/orangepumpkins.jpg';
-import Item4 from './Products/carrots.jpg';
 import './Home.css';
+
+// TODO: Create separate json file
+import Item1 from './Products/Images/bellpepper.jpg';
+import Item2 from './Products/Images/tomatoes.jpg';
+import Item3 from './Products/Images/orangepumpkins.jpg';
+import Item4 from './Products/Images/carrots.jpg';
 
 const style = { background: '#446B40', padding: '8px 0' };
 const backtopstyle = {
