@@ -6,6 +6,7 @@ import Navbar from '../Navbar';
 import {ProductData} from './Products/ProductData';
 import './Home.css';
 
+const { Meta } = Card;
 const style = { background: '#446B40', padding: '8px 0' };
 const backtopstyle = {
   height: 40,
@@ -17,7 +18,6 @@ const backtopstyle = {
   textAlign: 'center',
   fontSize: 14,
 };
-const { Meta } = Card;
 
 function Home() {
   return(
