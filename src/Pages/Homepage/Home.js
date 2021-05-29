@@ -1,6 +1,6 @@
 import React from 'react';
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import {BackTop, Button, Row, Col, Divider, Pagination, Image, Card} from 'antd';
-import {Link} from 'react-router-dom';
 import Leafy from './Banner/Leafy.mp4';
 import Navbar from '../Navbar';
 import {ProductData} from './Products/ProductData';
