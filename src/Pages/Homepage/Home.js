@@ -89,7 +89,7 @@ function Home() {
               />
           </div>
         </div>
-
+        
         <footer className='footer-container'>
           <div className='footer-content'>
             <h2>Say Hello. ug kuwa na mo</h2>
