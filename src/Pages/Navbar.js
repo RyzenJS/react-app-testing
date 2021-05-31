@@ -24,7 +24,7 @@ function Navbar() {
         >
           <Menu.Item className='navbar-toggle'>
             <Link to='/' className='menu-bars'>
-            <CloseOutlined onClick={showSidebar}/>
+              <CloseOutlined onClick={showSidebar}/>
             </Link>
           </Menu.Item>
 
