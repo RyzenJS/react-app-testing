@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   HomeOutlined,
-  ShoppingCartOutlined,
+  ShopOutlined,
   ExclamationCircleOutlined,
   PhoneOutlined
 } from '@ant-design/icons';
@@ -23,7 +23,7 @@ export const NavbarData = [
   {
     title: 'Our Products',
     path: '/our-products',
-    icon: <ShoppingCartOutlined />,
+    icon: <ShopOutlined />,
     cName: 'nav-text'
   },
   {
