@@ -45,8 +45,8 @@ function Home() {
           <div className='moving-banner-content'>
             <h1>Vegetables</h1>
             <h3>Full screen video landing page</h3>
-            <a href='#product'><Button className='banner-btn'>Read More</Button></a>
           </div>
+          <a href="#product"><Button className='banner-btn'>Read More</Button></a>
         </header>
 
         <section id='product'>
