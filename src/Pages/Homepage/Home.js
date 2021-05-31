@@ -99,7 +99,7 @@ function Home() {
           </div>
         </footer>
 
-        <BackTop duration={100}>
+        <BackTop duration={150}>
           <div style={backtopstyle}>Up</div>
         </BackTop>
       </div>
