@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 function CarrotDetail() {
   return (
     <>
-      <h1>Carrot</h1>
+      <h1>Carrot details here</h1>
     </>
   )
 }

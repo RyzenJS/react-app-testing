@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 function PumpkinDetail() {
   return (
     <>
-      <h1>Pump</h1>
+      <h1>Pump details here</h1>
     </>
   )
 }

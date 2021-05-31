@@ -7,10 +7,10 @@ import Pumpkin from './Images/orangepumpkins.jpg';
 import Carrot from './Images/carrots.jpg';
 
 // Pages
-import BellpepperPage from './Items/BellpepperDetail';
-import TomatoPage from './Items/TomatoDetail';
-import PumpkinPage from './Items/PumpkinDetail';
-import CarrotPage from './Items/CarrotDetail';
+import BellpepperDetail from './Items/BellpepperDetail';
+import TomatoDetail from './Items/TomatoDetail';
+import PumpkinDetail from './Items/PumpkinDetail';
+import CarrotDetail from './Items/CarrotDetail';
 
 export const ProductData = [
   {
@@ -18,7 +18,7 @@ export const ProductData = [
     path: '/greenbellpepperdetail',
     description: 'www.pexels.com',
     image: <img src={Bellpepper} alt="Bellpepper" />,
-    component: BellpepperPage,
+    component: BellpepperDetail,
     cName: 'data-text'
   },
   {
@@ -26,7 +26,7 @@ export const ProductData = [
     path: '/carrotdetail',
     description: 'www.pexels.com',
     image: <img src={Carrot} alt="Carrot" />,
-    component: TomatoPage,
+    component: CarrotDetail,
     cName: 'data-text'
   },
   {
@@ -34,7 +34,7 @@ export const ProductData = [
     path: '/pumpkindetail',
     description: 'www.pexels.com',
     image: <img src={Pumpkin} alt="Pumpkin" />,
-    component: PumpkinPage,
+    component: PumpkinDetail,
     cName: 'data-text'
   },
   {
@@ -42,7 +42,7 @@ export const ProductData = [
     path: '/tomatodetail',
     description: 'www.pexels.com',
     image: <img src={Tomato} alt="Tomato" />,
-    component: CarrotPage,
+    component: TomatoDetail,
     cName: 'data-text'
   }
 ]

@@ -3,7 +3,7 @@ import React from 'react';
 function TomatoDetail() {
   return (
     <>
-      <h1>Tomato</h1>
+      <h1>Tomato details here</h1>
     </>
   )
 }

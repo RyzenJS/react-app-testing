@@ -13,6 +13,11 @@ import Home from './Pages/Homepage/Home';
 import AboutUs from './Pages/AboutUs/AboutUs';
 import OurProduct from './Pages/OurProduct/OurProduct';
 import ContactUs from './Pages/ContactUs/ContactUs';
+import BellpepperDetail from './Pages/Homepage/Products/Items/BellpepperDetail';
+import TomatoDetail from './Pages/Homepage/Products/Items/TomatoDetail';
+import PumpkinDetail from './Pages/Homepage/Products/Items/PumpkinDetail';
+import CarrotDetail from './Pages/Homepage/Products/Items/CarrotDetail';
+
 import './App.css';
 
 
@@ -27,6 +32,10 @@ function App() {
           <Route path='/about-us' component={AboutUs} />
           <Route path='/our-products' component={OurProduct} />
           <Route path='/contact-us' component={ContactUs} />
+          <Route path='/greenbellpepperdetail' component={BellpepperDetail} />
+          <Route path='/tomatodetail' component={TomatoDetail} />
+          <Route path='/pumpkindetail' component={PumpkinDetail} />
+          <Route path='/carrotdetail' component={CarrotDetail} />
           <Route path='*' component={NoMatch} />
         </Switch>
       </Router>

@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 function BellpepperDetail() {
   return (
     <>
-      <h1>pepper</h1>
+      <h1>pepper details here</h1>
     </>
   )
 }
