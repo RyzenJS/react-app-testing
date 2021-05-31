@@ -13,14 +13,16 @@ import {
   Divider,
   Pagination,
   Image,
-  Card
+  Card,
+  Typography
 } from 'antd';
 import Leafy from './Banner/Leafy.mp4';
 import AppContainer from '../../utils/AppContainer';
 import Navbar from '../Navbar';
-import {ProductData} from './Products/ProductData';
+import {ProductData} from '../OurProduct/Product/ProductData';
 import './Home.css';
 
+const { Title, Paragraph } = Typography;
 const { Meta } = Card;
 const style = { background: '#446B40', padding: '8px 0' };
 const backtopstyle = {
@@ -46,55 +48,27 @@ function Home() {
             <h1>Vegetables</h1>
             <h3>Full screen video landing page</h3>
           </div>
-          <a href="#product"><Button className='banner-btn'>Read More</Button></a>
+          <a href="#about-us"><Button className='banner-btn'>Read More</Button></a>
         </header>
 
-        <section id='product'>
+        <section id='about-us'>
           <div className='content-container'>
-          {/*<blockquote>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </blockquote> */}
-
-              <div className='product-container'>
-              <Divider orientation="left"><h2>All Products</h2></Divider>
-              <Row>
-              {
-                ProductData.map((item, index) => {
-                  return(
-                    <Col>
-                    <Link to={item.path}>
-                    <Card
-                    hoverable
-                    style={{ width: 240}}
-                    cover={item.image}
-                    >
-                    <Meta title={item.title} description={item.description} />
-                    </Card>
-                    </Link>
-                    </Col>
-                  )
-                })
-              }
-              </Row>
-
-              <Pagination
-              className='pagination'
-              current='1'
-              simple defaultCurrent={2}
-              total={20}
-              responsive={true}
-              />
-            </div>
+            <Title level={2}>About Us</Title>
+            <blockquote>
+              <Paragraph copyable={{tooltips: false}}>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </Paragraph>
+            </blockquote>
           </div>
         </section>
 
         <footer className='footer-container'>
           <div className='footer-content'>
-            <h2>kuwa na mo</h2>
+            <h2>Contact Us.</h2>
             <a target='_blank' rel='noreferrer noopener nofollow'><h1>gulay@vegetables.com</h1></a>
           </div>
         </footer>

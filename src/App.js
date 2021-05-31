@@ -13,11 +13,10 @@ import Home from './Pages/Homepage/Home';
 import AboutUs from './Pages/AboutUs/AboutUs';
 import OurProduct from './Pages/OurProduct/OurProduct';
 import ContactUs from './Pages/ContactUs/ContactUs';
-import BellpepperDetail from './Pages/Homepage/Products/Items/BellpepperDetail';
-import TomatoDetail from './Pages/Homepage/Products/Items/TomatoDetail';
-import PumpkinDetail from './Pages/Homepage/Products/Items/PumpkinDetail';
-import CarrotDetail from './Pages/Homepage/Products/Items/CarrotDetail';
-
+import BellpepperDetail from './Pages/OurProduct/Product/Items/BellpepperDetail';
+import TomatoDetail from './Pages/OurProduct/Product/Items/TomatoDetail';
+import PumpkinDetail from './Pages/OurProduct/Product/Items/PumpkinDetail';
+import CarrotDetail from './Pages/OurProduct/Product/Items/CarrotDetail';
 import './App.css';
 
 

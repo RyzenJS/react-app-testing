@@ -146,6 +146,10 @@ blockquote {
   flex-flow: row wrap;
 }
 
+.anticon svg {
+  color: rgb(68, 107, 64);
+}
+
 /* Footer */
 .footer-container {
   position: relative;
