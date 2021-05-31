@@ -49,47 +49,49 @@ function Home() {
           </div>
         </header>
 
-          <div id='product' className='content-container'>
-            {/*<blockquote>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <section id='product'>
+          <div className='content-container'>
+          {/*<blockquote>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </blockquote> */}
 
-            <div className='product-container'>
+              <div className='product-container'>
               <Divider orientation="left"><h2>All Products</h2></Divider>
               <Row>
-                {
-                  ProductData.map((item, index) => {
-                    return(
-                          <Col>
-                            <Link to={item.path}>
-                              <Card
-                                hoverable
-                                style={{ width: 240}}
-                                cover={item.image}
-                              >
-                                  <Meta title={item.title} description={item.description} />
-                              </Card>
-                            </Link>
-                          </Col>
-                    )
-                  })
-                }
+              {
+                ProductData.map((item, index) => {
+                  return(
+                    <Col>
+                    <Link to={item.path}>
+                    <Card
+                    hoverable
+                    style={{ width: 240}}
+                    cover={item.image}
+                    >
+                    <Meta title={item.title} description={item.description} />
+                    </Card>
+                    </Link>
+                    </Col>
+                  )
+                })
+              }
               </Row>
 
               <Pagination
-                className='pagination'
-                current='1'
-                simple defaultCurrent={2}
-                total={20}
-                responsive={true}
+              className='pagination'
+              current='1'
+              simple defaultCurrent={2}
+              total={20}
+              responsive={true}
               />
+            </div>
           </div>
-        </div>
-        
+        </section>
+
         <footer className='footer-container'>
           <div className='footer-content'>
             <h2>Say Hello. ug kuwa na mo</h2>
