@@ -94,12 +94,12 @@ function Home() {
 
         <footer className='footer-container'>
           <div className='footer-content'>
-            <h2>Say Hello. ug kuwa na mo</h2>
+            <h2>kuwa na mo</h2>
             <a target='_blank' rel='noreferrer noopener nofollow'><h1>gulay@vegetables.com</h1></a>
           </div>
         </footer>
 
-        <BackTop duration={900}>
+        <BackTop duration={100}>
           <div style={backtopstyle}>Up</div>
         </BackTop>
       </div>
