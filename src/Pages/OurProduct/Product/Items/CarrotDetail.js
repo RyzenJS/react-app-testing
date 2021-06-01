@@ -7,7 +7,8 @@ function CarrotDetail() {
   // of the URL indicates a placeholder that we can
   // get from `useParams()`.
   let { topicId } = useParams();
-  
+  console.log('topicId', topicId);
+
   return (
     <>
       <h1>Carrot details here</h1>
