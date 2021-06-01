@@ -30,11 +30,11 @@ function App() {
           <Route exact path='/' component={Home} />
           <Route path='/about-us' component={AboutUs} />
           <Route path='/our-products' component={OurProduct} />
-          <Route path='/contact-us' component={ContactUs} />
-          <Route path='/greenbellpepperdetail' component={BellpepperDetail} />
-          <Route path='/tomatodetail' component={TomatoDetail} />
-          <Route path='/pumpkindetail' component={PumpkinDetail} />
-          <Route path='/carrotdetail' component={CarrotDetail} />
+          <Route path='/contact-us'><ContactUs /></Route>
+          <Route path='/contact-us/greenbellpepper-detail' component={BellpepperDetail} />
+          <Route path='/contact-us/carrot-detail' component={CarrotDetail} />
+          <Route path='/contact-us/pumpkin-detail' component={PumpkinDetail} />
+          <Route path='/contact-us/tomato-detail' component={TomatoDetail} />
           <Route path='*' component={NoMatch} />
         </Switch>
       </Router>
