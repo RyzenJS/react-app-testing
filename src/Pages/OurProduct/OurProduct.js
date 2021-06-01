@@ -23,6 +23,7 @@ import {ProductData} from './Product/ProductData';
 import '../Homepage/Home.css';
 import './OurProduct.css';
 import Leafy from '../Homepage/Banner/Leafy.mp4';
+import BellpepperDetail from './Product/Items/BellpepperDetail';
 
 const { Title, Paragraph } = Typography;
 const { Meta } = Card;
@@ -80,10 +81,16 @@ function OurProduct() {
         </div>
       </div>
 
-      <Switch>
-        <Route exact path={path} />
-        <Route path={`${path}/:topicId`} />
-      </Switch>
+      {
+        ProductData.map((index, item) => {
+          return(
+            <Switch>
+              <Route exact path={path} />
+              <Route path={`${path}/:topicId`}><BellpepperDetail/></Route>
+            </Switch>
+          )
+        })
+      }
     </AppContainer>
   )
 }
