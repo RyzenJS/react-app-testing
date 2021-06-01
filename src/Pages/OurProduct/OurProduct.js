@@ -1,7 +1,14 @@
 import React from 'react';
 import AppContainer from '../../utils/AppContainer';
-import {Link} from 'react-router-dom';
 import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect,
+  useLocation,
+  useRouteMatch
+} from 'react-router-dom';import {
   BackTop,
   Button,
   Row,
@@ -22,6 +29,13 @@ const { Meta } = Card;
 const style = { background: '#446B40', padding: '8px 0' };
 
 function OurProduct() {
+  // The `path` lets us build <Route> paths that are
+  // relative to the parent route, while the `url` lets
+  // us build relative links.
+  let { path, url } = useRouteMatch();
+  console.log('path', path)
+  console.log('url', url)
+
   return (
     <AppContainer>
       <div className='OurProduct-body'>
@@ -41,15 +55,15 @@ function OurProduct() {
               ProductData.map((item, index) => {
                 return(
                   <Col>
-                  <Link to={item.path}>
-                  <Card
-                  hoverable
-                  style={{ width: 240}}
-                  cover={item.image}
-                  >
-                  <Meta title={item.title} description={item.description} />
-                  </Card>
-                  </Link>
+                    <Link to={`${url}/${item.path}`}>
+                      <Card
+                      hoverable
+                      style={{ width: 240}}
+                      cover={item.image}
+                      >
+                        <Meta title={item.title} description={item.description} />
+                      </Card>
+                    </Link>
                   </Col>
                 )
               })
@@ -65,6 +79,11 @@ function OurProduct() {
           />
         </div>
       </div>
+
+      <Switch>
+        <Route exact path={path} />
+        <Route path={`${path}/:topicId`} />
+      </Switch>
     </AppContainer>
   )
 }
