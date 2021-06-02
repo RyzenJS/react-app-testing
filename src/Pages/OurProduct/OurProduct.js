@@ -86,7 +86,7 @@ function OurProduct() {
           return(
             <Switch>
               <Route exact path={path} />
-              <Route path={`${path}/:topicId`}><BellpepperDetail/></Route>
+              <Route path={`${path}/:topicId`} />
             </Switch>
           )
         })
