@@ -29,12 +29,12 @@ function App() {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route path='/about-us' component={AboutUs} />
-          <Route path='/our-products' component={OurProduct} />
-          <Route path='/contact-us'><ContactUs /></Route>
-          <Route path='/contact-us/greenbellpepper-detail' component={BellpepperDetail} />
-          <Route path='/contact-us/carrot-detail' component={CarrotDetail} />
-          <Route path='/contact-us/pumpkin-detail' component={PumpkinDetail} />
-          <Route path='/contact-us/tomato-detail' component={TomatoDetail} />
+          <Route path='/contact-us' component={ContactUs} />
+          <Route path='/our-products'><OurProduct /></Route>
+          <Route path='/our-products/greenbellpepper-detail' component={BellpepperDetail} />
+          <Route path='/our-products/carrot-detail' component={CarrotDetail} />
+          <Route path='/our-products/pumpkin-detail' component={PumpkinDetail} />
+          <Route path='/our-products/tomato-detail' component={TomatoDetail} />
           <Route path='*' component={NoMatch} />
         </Switch>
       </Router>
