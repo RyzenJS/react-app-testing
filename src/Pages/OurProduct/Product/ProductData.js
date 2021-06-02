@@ -15,7 +15,7 @@ import TomatoDetail from './Items/TomatoDetail';
 export const ProductData = [
   {
     title: 'Green Bell Pepper',
-    path: 'greenbellpepper-detail',
+    path: '/greenbellpepper-detail',
     description: 'www.pexels.com',
     image: <img src={Bellpepper} alt="Bellpepper" />,
     page: BellpepperDetail,
@@ -23,7 +23,7 @@ export const ProductData = [
   },
   {
     title: 'Carrots',
-    path: 'carrot-detail',
+    path: '/carrot-detail',
     description: 'www.pexels.com',
     image: <img src={Carrot} alt="Carrot" />,
     page: CarrotDetail,
@@ -31,7 +31,7 @@ export const ProductData = [
   },
   {
     title: 'Orange Pumpkins',
-    path: 'pumpkin-detail',
+    path: '/pumpkin-detail',
     description: 'www.pexels.com',
     image: <img src={Pumpkin} alt="Pumpkin" />,
     page: PumpkinDetail,
@@ -39,7 +39,7 @@ export const ProductData = [
   },
   {
     title: 'Tomatoes',
-    path: 'tomato-detail',
+    path: '/tomato-detail',
     description: 'www.pexels.com',
     image: <img src={Tomato} alt="Tomato" />,
     page: TomatoDetail,

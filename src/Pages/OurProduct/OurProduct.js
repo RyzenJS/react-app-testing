@@ -23,7 +23,6 @@ import {ProductData} from './Product/ProductData';
 import '../Homepage/Home.css';
 import './OurProduct.css';
 import Leafy from '../Homepage/Banner/Leafy.mp4';
-import BellpepperDetail from './Product/Items/BellpepperDetail';
 
 const { Title, Paragraph } = Typography;
 const { Meta } = Card;
@@ -56,7 +55,7 @@ function OurProduct() {
               ProductData.map((item, index) => {
                 return(
                   <Col>
-                    <Link to={`${url}/${item.path}`}>
+                    <Link to={`${url}${item.path}`}>
                       <Card
                       hoverable
                       style={{ width: 240}}
@@ -80,17 +79,6 @@ function OurProduct() {
           />
         </div>
       </div>
-
-      {
-        ProductData.map((index, item) => {
-          return(
-            <Switch>
-              <Route exact path={path} />
-              <Route path={`${path}/:topicId`} />
-            </Switch>
-          )
-        })
-      }
     </AppContainer>
   )
 }
