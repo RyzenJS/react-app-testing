@@ -53,6 +53,7 @@ function Home() {
 
         <section id='about-us'>
           <div className='content-container'>
+            <Title level={3}>Welcome</Title>
             <Title level={2}>About Us</Title>
             <blockquote>
               <Paragraph copyable={{tooltips: false}}>
@@ -63,6 +64,7 @@ function Home() {
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </Paragraph>
             </blockquote>
+            <Button>Get Direction</Button>
           </div>
         </section>
 
