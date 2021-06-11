@@ -19,6 +19,7 @@ import {
 import Leafy from './Banner/Leafy.mp4';
 import AppContainer from '../../utils/AppContainer';
 import Navbar from '../Navbar';
+import Header from '../components/Header/Header';
 import {ProductData} from '../OurProduct/Product/ProductData';
 import './Home.css';
 
@@ -40,16 +41,7 @@ function Home() {
   return(
     <AppContainer>
       <div className='Homepage-body'>
-        <header className='moving-banner'>
-          <div className='video-container'>
-            <video src={Leafy} autoPlay muted loop></video>
-          </div>
-          <div className='moving-banner-content'>
-            <h1>Vegetables</h1>
-            <h3>Full screen video landing page</h3>
-          </div>
-          <a href="#about-us"><Button className='banner-btn'>Read More</Button></a>
-        </header>
+        <Header />
 
         <section id='about-us'>
           <div className='content-container'>

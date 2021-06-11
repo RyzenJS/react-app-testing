@@ -8,7 +8,8 @@ import {
   Redirect,
   useLocation,
   useRouteMatch
-} from 'react-router-dom';import {
+} from 'react-router-dom';
+import {
   BackTop,
   Button,
   Row,
