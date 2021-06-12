@@ -15,7 +15,6 @@ function Kard({data}) {
   const cart = useSelector((state) => state.cart);
   const {addToCart, removeFromCart} = bindActionCreators(actionCreators, dispatch);
   const style = { background: '#446B40', padding: '8px 0' };
-  const {Meta} = Card;
 
   return (
     <>
@@ -25,8 +24,14 @@ function Kard({data}) {
           style={{ width: 240}}
           cover={<img src={require("../../../images/product/" + image + ".jpg").default} className='Kard-img' />}
         >
-          <Meta title={name} description={description}><h2>${price}</h2></Meta>
-
+          <div className='title-price'>
+            <h2 className='kard-h2'>{name}</h2>
+            <h3 className='kard-h3'>${price}</h3>
+          </div>
+          <p className='kard-p'>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Error, eaque sequi eius?
+          </p>
           {isIntoCart(cart, id) ? (
             <Button className='kard-btn' onClick={() => removeFromCart(id)} style={{background: "#ff335c" }}>Remove From Cart</Button>
           ) : (
