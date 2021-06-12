@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom';
 import 'antd/dist/antd.css';
 import NoMatch from './Pages/NoMatch';
+import Nav from './Pages/components/Nav/Nav';
 import Home from './Pages/Homepage/Home';
 import AboutUs from './Pages/AboutUs/AboutUs';
 import OurProduct from './Pages/OurProduct/OurProduct';
@@ -24,6 +25,7 @@ function App() {
   return (
     <>
       <Router>
+        <Nav />
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>

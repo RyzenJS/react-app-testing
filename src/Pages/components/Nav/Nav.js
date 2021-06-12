@@ -2,16 +2,16 @@ import React from 'react';
 import './Nav.css';
 import {Link} from 'react-router-dom';
 import {useSelector} from 'react-redux';
-import logo from '../../../../public/favicon.ico';
+import logo from '../../../images/favicon.ico';
 
 function Nav() {
   const cart = useSelector((state) => state.cart);
 
   return (
     <>
-    <nav className="">
+    <nav className="navbar">
       <div className="header-nav">
-        <Link to="/"><img src={logo}></Link>
+        <Link to="/"><img src={logo} /></Link>
         <button
           className="navbar-toggler"
           type="button"

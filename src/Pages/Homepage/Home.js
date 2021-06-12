@@ -22,7 +22,6 @@ const backtopstyle = {
 
 function Home() {
   return(
-    <AppContainer>
       <div className='Homepage-body'>
         <Header />
         <AboutUs />
@@ -31,7 +30,6 @@ function Home() {
 
         <BackTop duration={150}><div style={backtopstyle}>Up</div></BackTop>
       </div>
-    </AppContainer>
   )
 }
 
