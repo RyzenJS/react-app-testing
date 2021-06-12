@@ -4,27 +4,31 @@ export const products = [
     name: "Green Bell Pepper",
     type: "vegetable",
     image: "bell-pepper",
-    price: 10
+    path: "/green-bell-pepper",
+    price: 2
   },
   {
     id: 2,
     name: "Carrot",
     type: "vegetable",
     image: "carrot",
-    price: 15
+    path: "/carrot",
+    price: 3
   },
   {
     id: 3,
     name: "Orange Pumpkin",
-    image: "orange-pumpkin",
     type: "vegetable",
-    price: 20
+    image: "orange-pumpkin",
+    path: "/orange-pumpkin",
+    price: 5
   },
   {
     id: 4,
     name: "Tomato",
     type: "vegetable",
     image: "tomato",
-    price: 10
+    path: "/tomato",
+    price: 2
   },
 ];

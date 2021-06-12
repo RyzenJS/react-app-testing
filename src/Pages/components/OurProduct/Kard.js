@@ -29,8 +29,8 @@ function Kard({data}) {
             <h3 className='kard-h3'>${price}</h3>
           </div>
           <p className='kard-p'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Error, eaque sequi eius?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Error, eaque sequi eius?
           </p>
           {isIntoCart(cart, id) ? (
             <Button className='kard-btn' onClick={() => removeFromCart(id)} style={{background: "#ff335c" }}>Remove From Cart</Button>
