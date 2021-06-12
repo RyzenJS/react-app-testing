@@ -1,5 +1,10 @@
 @import '~antd/dist/antd.css';
 
+:root {
+  --add: #446B40;
+  --remove: rgb(255, 51, 92);
+}
+
 #product {
   position: relative;
   max-width: 1140px;
@@ -18,4 +23,24 @@
   color: #446B40;
   padding: 0;
   margin: 0;
+}
+
+.ant-card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kard-btn,
+.kard-btn:active,
+.kard-btn:focus,
+.kard-btn:hover {
+  margin-top: 20px;
+  background-color: var(--add);
+  border-color: transparent;
+  border-radius: 5px;
+  color: #fff;
+  width: 140px;
+  height: 40px;
+  transition: all 500ms;
 }

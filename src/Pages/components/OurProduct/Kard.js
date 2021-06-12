@@ -7,9 +7,10 @@ import {bindActionCreators} from 'redux';
 import {isIntoCart} from '../../../helper/helper';
 import {actionCreators} from '../../../state/index';
 import {Card, Button, Col} from 'antd';
+import './OurProduct.css';
 
 function Kard({data}) {
-  const {id, name, price, description} = data;
+  const {id, name, price, description, image} = data;
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
   const {addToCart, removeFromCart} = bindActionCreators(actionCreators, dispatch);
@@ -22,13 +23,14 @@ function Kard({data}) {
         <Card
           hoverable
           style={{ width: 240}}
+          cover={<img src={require("../../../images/product/" + image + ".jpg").default} className='Kard-img' />}
         >
           <Meta title={name} description={description}><h2>${price}</h2></Meta>
 
           {isIntoCart(cart, id) ? (
-            <Button onClick={() => removeFromCart(id)}>Remove From Cart</Button>
+            <Button className='kard-btn' onClick={() => removeFromCart(id)} style={{background: "#ff335c" }}>Remove From Cart</Button>
           ) : (
-            <Button onClick={() => addToCart(data)}>Add To Cart</Button>
+            <Button className='kard-btn' onClick={() => addToCart(data)}>Add To Cart</Button>
           )}
         </Card>
       </Col>
