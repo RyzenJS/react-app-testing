@@ -1,0 +1,21 @@
+@import '~antd/dist/antd.css';
+
+#product {
+  position: relative;
+  max-width: 1140px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 50px 15px 100px 0;
+}
+
+#product .product-h1 {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #446B40;
+  padding: 0;
+  margin: 0;
+}

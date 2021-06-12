@@ -18,7 +18,6 @@ function Kard({data}) {
 
   return (
     <>
-    <div classN ame='card-container'>
       <Col>
         <Card
           hoverable
@@ -33,7 +32,6 @@ function Kard({data}) {
           )}
         </Card>
       </Col>
-    </div>
     </>
   )
 }

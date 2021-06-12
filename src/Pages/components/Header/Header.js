@@ -15,7 +15,7 @@ function Header() {
         <h1 className='header-h1'>Vegetables</h1>
         <h3 className='header-h3'>Full screen video landing page</h3>
       </div>
-      <a href="#about-us"><Button className='screen-btn'>Read More</Button></a>
+      <a href="#product"><Button className='screen-btn'>Read More</Button></a>
     </header>
     </>
   )
