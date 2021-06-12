@@ -1,12 +1,9 @@
 import React from 'react';
 import {BackTop} from 'antd';
-import AppContainer from '../../utils/AppContainer';
-import Navbar from '../Navbar';
 import Header from '../components/Header/Header';
 import AboutUs from '../components/AboutUs/AboutUs';
 import OurProduct from '../components/OurProduct/OurProduct';
 import Footer from '../components/Footer/Footer';
-import {ProductData} from '../OurProduct/Product/ProductData';
 import './Home.css';
 
 const backtopstyle = {
