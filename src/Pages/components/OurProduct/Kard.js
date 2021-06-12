@@ -14,7 +14,7 @@ function Kard({data}) {
   const cart = useSelector((state) => state.cart);
   const {addToCart, removeFromCart} = bindActionCreators(actionCreators, dispatch);
   const style = { background: '#446B40', padding: '8px 0' };
-  const { Meta } = Card;
+  const {Meta} = Card;
 
   return (
     <>
