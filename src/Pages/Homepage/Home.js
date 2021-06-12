@@ -25,9 +25,10 @@ function Home() {
         <OurProduct />
         <Footer />
 
-        <BackTop duration={150}><div style={backtopstyle}>Up</div></BackTop>
       </div>
   )
 }
 
 export default Home;
+
+// <BackTop duration={150}><div style={backtopstyle}>Up</div></BackTop>
