@@ -4,6 +4,14 @@
   background: #446B40;
 }
 
+.Homepage-body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 0.5em;
@@ -16,14 +24,6 @@ blockquote {
   font-weight: 400;
 }
 
-.Homepage-body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  width: 100%;
-  box-sizing: border-box;
-}
-
 .content {
   margin: 0;
   padding: 0 150px 100px 0;
@@ -32,39 +32,6 @@ blockquote {
 
 .anticon svg {
   color: rgb(68, 107, 64);
-}
-
-/* Footer */
-.footer-container {
-  position: relative;
-  max-width: 1140px;
-  padding: 0 150px 100px 0;
-  margin-right: 100px;
-}
-
-.footer-container h1,
-.footer-container h1:focus {
-  font-size: 40px;
-  margin: 0;
-  padding: 0;
-  opacity: 0.9;
-  transition: 0.5s;
-}
-
-.footer-container h1:hover {
-  color: #446B40;
-}
-
-.footer-container h2 {
-  font-weight: 400;
-  font-size: 20px;
-  margin: 0;
-  padding: 0;
-  opacity: 0.9;
-}
-
-.footer-content {
-  text-align: right;
 }
 
 .site-back-top-basic {

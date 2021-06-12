@@ -1,0 +1,39 @@
+@import '~antd/dist/antd.css';
+
+/* Footer */
+#footer {
+  position: relative;
+  max-width: 1140px;
+  max-height: max-content;
+  margin: 0 auto;
+  /* margin-right: 100px; */
+}
+
+.footer-content {
+  position: absolute;
+  right: 0;
+  width: max-content;
+  padding: 0 100px 100px 0;
+  /* background-color: #000; */
+}
+
+#footer .footer-h1,
+#footer .footer-h1:active,
+#footer .footer-h1:focus {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  opacity: 0.9;
+  transition: color 1000ms;
+}
+
+#footer .footer-h1:hover {
+  color: #446B40;
+}
+
+#footer .footer-h2 {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  opacity: 0.9;
+}
