@@ -20,6 +20,7 @@ import Leafy from './Banner/Leafy.mp4';
 import AppContainer from '../../utils/AppContainer';
 import Navbar from '../Navbar';
 import Header from '../components/Header/Header';
+import AboutUs from '../components/AboutUs/AboutUs';
 import {ProductData} from '../OurProduct/Product/ProductData';
 import './Home.css';
 
@@ -42,34 +43,9 @@ function Home() {
     <AppContainer>
       <div className='Homepage-body'>
         <Header />
+        <AboutUs />
 
-        <section id='about-us'>
-          <div className='content-container'>
-            <Title level={3}>Welcome</Title>
-            <Title level={2}>About Us</Title>
-            <blockquote>
-              <Paragraph copyable={{tooltips: false}}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </Paragraph>
-            </blockquote>
-            <Button>Get Direction</Button>
-          </div>
-        </section>
-
-        <footer className='footer-container'>
-          <div className='footer-content'>
-            <h2>Contact Us.</h2>
-            <a target='_blank' rel='noreferrer noopener nofollow'><h1>gulay@vegetables.com</h1></a>
-          </div>
-        </footer>
-
-        <BackTop duration={150}>
-          <div style={backtopstyle}>Up</div>
-        </BackTop>
+        <BackTop duration={150}><div style={backtopstyle}>Up</div></BackTop>
       </div>
     </AppContainer>
   )

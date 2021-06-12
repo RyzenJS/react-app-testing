@@ -11,23 +11,24 @@
   padding: 0 20px;
 }
 
-.screen-content h1,
-.screen-content h3 {
+.screen-content .header-h1,
+.screen-content .header-h3 {
   margin: 0;
   padding: 0;
   font-weight: 300;
+  user-select: none;
 }
 
-.screen-content h1 {
+.screen-content .header-h1 {
   font-size: 60px;
 }
 
-.screen-content h1, h3 {
+.screen-content .header-h1, .header-h3 {
   color: #fff;
   z-index: 10;
 }
 
-.screen-content h3 {
+.screen-content .header-h3 {
   padding-bottom: 30px;
 }
 
@@ -44,7 +45,6 @@
   border-color: #fff;
   color: #000;
 }
-
 
 .video-container {
   position: absolute;
