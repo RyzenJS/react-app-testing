@@ -13,7 +13,7 @@ function ListCard({data}) {
     <>
     <div className="listcard-wrapper">
       <div className="imageAndName">
-        <img src={require("../../../images/" + image + ".jpg").default} />
+        <img src={require("../../../images/product/" + image + ".jpg").default} />
         <h4 className="listcard-h4">{name}</h4>
       </div>
 

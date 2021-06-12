@@ -10,6 +10,7 @@ import {
 import 'antd/dist/antd.css';
 import NoMatch from './Pages/NoMatch';
 import Nav from './Pages/components/Nav/Nav';
+import Order from './Pages/Order';
 import Home from './Pages/Homepage/Home';
 import AboutUs from './Pages/AboutUs/AboutUs';
 import OurProduct from './Pages/OurProduct/OurProduct';
@@ -30,6 +31,7 @@ function App() {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route path='/order' component={Order} />
           <Route path='/about-us' component={AboutUs} />
           <Route path='/contact-us' component={ContactUs} />
           <Route exact path='/our-products' component={OurProduct} />
