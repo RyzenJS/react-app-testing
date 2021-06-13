@@ -27,7 +27,7 @@ function OrderList() {
                 ))
               }
               <div className="orderlist-total">
-                <h4 className="order-h4">Total : ${totalCost(cart)}</h4>
+                <h4 className="order-h4">Total: ${totalCost(cart)}</h4>
 
                 <button className="order-checkout" onClick={() => checkout()}>Checkout</button>
               </div>
