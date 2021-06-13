@@ -1,0 +1,62 @@
+@import '~antd/dist/antd.css';
+
+#about-us {
+  position: relative;
+  max-width: 1140px;
+  height: 60vh;
+  margin: 0 auto;
+  padding: 100px 15px 100px 0;
+}
+
+#about-us .about-wrapper {
+  position: absolute;
+  width: 50%;
+  border-color: #446B40;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#about-us .about-h1,
+#about-us .about-h4,
+#about-us .about-h5 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
+
+#about-us .about-h3 {
+  color: #446B40;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  user-select: none;
+  font-weight: 700;
+}
+
+#about-us .about-h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#about-us .about-p {
+  font-size: 20px;
+  line-height: 1.5625em;
+  font-weight: 400;
+}
+
+#about-us .about-wrapper .about-btn,
+#about-us .about-wrapper .about-btn:focus,
+#about-us .about-wrapper .about-btn:active {
+  background-color: #446B40;
+  border-color: transparent;
+  border-radius: 5px;
+  color: #fff;
+  max-width: max-content;
+  transition: all 500ms;
+}
+
+#about-us .about-wrapper .about-btn:hover {
+  background-color: #fff;
+  border-color: #446B40;
+  color: #446B40;
+}

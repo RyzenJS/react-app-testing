@@ -1,0 +1,80 @@
+@import '~antd/dist/antd.css';
+
+:root {
+  --add: #446B40;
+  --remove: rgb(255, 51, 92);
+}
+
+#product {
+  position: relative;
+  max-width: 1140px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 50px 15px 100px 0;
+}
+
+#product .product-h1 {
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #446B40;
+  padding: 0;
+  margin: 0;
+}
+
+.kard-btn,
+.kard-btn:active,
+.kard-btn:focus,
+.kard-btn:hover {
+  margin-top: 20px;
+  background-color: var(--add);
+  border-color: transparent;
+  max-width: max-content;
+  border-radius: 5px;
+  color: #fff;
+  width: 140px;
+  height: 40px;
+  transition: all 500ms;
+}
+
+.Kard-card {
+  user-select: none;
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  transition: transform 500ms ease-in-out;
+}
+
+.Kard-card:hover {
+  transform: scale(1.05);
+}
+
+.Kard-img {
+  object-fit: contain;
+}
+
+.title-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kard-h2 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.kard-h3 {
+  color: var(--add);
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.kard-p {
+  font-size: 14px;
+  text-align: justify;
+}

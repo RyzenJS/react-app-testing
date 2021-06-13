@@ -1,0 +1,113 @@
+@import '~antd/dist/antd.css';
+
+.orderlist-wrapper {
+  min-height: 400px;
+  margin-top: 6rem;
+}
+
+.orderlist-card {
+  width: 80%;
+  min-height: 400px;
+  margin: 2rem auto;
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 40%);
+  border-radius: 20px;
+  padding: 2rem;
+  user-select: none;
+}
+
+.order-h4 {
+  color: #446B40;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.orderlist-total {
+  text-align: right;
+  margin-right: 6%;
+}
+
+/* ListCard.js */
+.listcard-wrapper {
+  display: grid;
+  grid-template-areas: "imageAndName calculation price";
+  align-items: center;
+  margin-bottom: 20px;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.listcard-wrapper:hover {
+  background-color: rgb(238, 238, 238);
+  cursor: pointer;
+}
+
+.listcard-wrapper .imageAndName {
+  grid-area: imageAndName;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  width: 350px;
+}
+
+.listcard-wrapper .imageAndName img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.listcard-wrapper .imageAndName h4, .price {
+  font-weight: 500;
+  color: #000;
+  font-size: 1.1rem;
+}
+
+.listcard-wrapper .calculation {
+  grid-area: calculation;
+  text-align: center;
+}
+
+.listcard-wrapper .calculation button {
+  padding: 5px 15px;
+  box-shadow: none;
+  border-color: none;
+}
+
+.listcard-wrapper .calculation input {
+  padding: 5px 15px;
+  width: 100px;
+  margin: 0 15px;
+  text-align: center;
+}
+
+.blue {
+  background-color: royalblue;
+}
+
+.red {
+  background-color: #ff335c;
+}
+
+.listcard-wrapper .price {
+  grid-area: price;
+  text-align: center;
+}
+
+.emptyImage {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+}
+
+@media only screen and (max-width: 600px){
+  .listcard-wrapper {
+    display: grid;
+    grid-template-areas:
+      "imageAndName price"
+      "claculation calculation";
+    transition: background-color 100ms ease-in-out;
+  }
+
+  .listcard-wrapper .imageAndName {
+    width: auto;
+  }
+}
