@@ -44,19 +44,18 @@
   font-weight: 400;
 }
 
-.about-btn,
-.about-btn:focus,
-.about-btn:active {
+#about-us .about-wrapper .about-btn,
+#about-us .about-wrapper .about-btn:focus,
+#about-us .about-wrapper .about-btn:active {
   background-color: #446B40;
   border-color: transparent;
   border-radius: 5px;
   color: #fff;
-  width: 140px;
-  height: 35px;
+  max-width: max-content;
   transition: all 500ms;
 }
 
-.about-btn:hover {
+#about-us .about-wrapper .about-btn:hover {
   background-color: #fff;
   border-color: #446B40;
   color: #446B40;

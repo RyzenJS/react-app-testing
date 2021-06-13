@@ -69,6 +69,7 @@
 .listcard-wrapper .calculation button {
   padding: 5px 15px;
   box-shadow: none;
+  border-color: none;
 }
 
 .listcard-wrapper .calculation input {
@@ -83,7 +84,7 @@
 }
 
 .red {
-  background-color: rgba(248, 71, 71, 0.849);
+  background-color: #ff335c;
 }
 
 .listcard-wrapper .price {

@@ -32,6 +32,7 @@
   margin-top: 20px;
   background-color: var(--add);
   border-color: transparent;
+  max-width: max-content;
   border-radius: 5px;
   color: #fff;
   width: 140px;
