@@ -20,7 +20,7 @@ function Kard({data}) {
     <>
       <Col>
         <Card
-          hoverable
+          className="Kard-card"
           style={{ width: 240}}
           cover={<img src={require("../../../images/product/" + image + ".jpg").default} className='Kard-img' />}
         >
