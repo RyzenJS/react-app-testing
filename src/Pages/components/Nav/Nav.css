@@ -1,0 +1,53 @@
+@import '~antd/dist/antd.css';
+
+nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 10px;
+  width: 100%;
+  background-color: #fff;
+  scroll-behavior: smooth;
+  z-index: 99;
+}
+
+nav .header-nav {
+  width: 80% !important;
+  margin: 0 auto;
+}
+
+nav .header-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav .header-nav .order-btn {
+  background-color: #446B40;
+  color: #fff !important;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+nav .cart {
+  background-color: #446B40;
+  color: #fff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-nav {
+    display: block;
+  }
+
+  .header-nav .navbar-toggler {
+    position: absolute;
+    right: 0;
+    top: 20px;
+  }
+
+  .header-nav .navbar-nav {
+    text-align: center;
+  }
+}

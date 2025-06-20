@@ -1,5 +1,10 @@
 import React from 'react';
-import {HomeOutlined, ShoppingCartOutlined} from '@ant-design/icons';
+import {
+  HomeOutlined,
+  ShopOutlined,
+  ExclamationCircleOutlined,
+  PhoneOutlined
+} from '@ant-design/icons';
 
 
 export const NavbarData = [
@@ -10,9 +15,21 @@ export const NavbarData = [
     cName: 'nav-text'
   },
   {
-    title: 'Item list',
-    path: '/',
-    icon: <ShoppingCartOutlined />,
+    title: 'About Us',
+    path: '/about-us',
+    icon: <ExclamationCircleOutlined />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'Our Products',
+    path: '/our-products',
+    icon: <ShopOutlined />,
+    cName: 'nav-text'
+  },
+  {
+    title: 'Contact Us',
+    path: '/contact-us',
+    icon: <PhoneOutlined />,
     cName: 'nav-text'
   }
 ]
